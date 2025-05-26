@@ -28,7 +28,7 @@ Vagrant.configure("2") do |config|
       type: 'raw',
       bus: 'virtio',
       name: 'buildtest_default-vdb.raw',  # 파일명을 name으로 사용
-      device: 'disk'
+      device: 'vdb'
       
     # 추가 성능 최적화 
     libvirt.disk_driver :cache => 'writeback'
